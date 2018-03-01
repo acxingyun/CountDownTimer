@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acxingyun.countdowntimer.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="请输入密码"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/btnStartCountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartCountDown"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="191dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        android:onClick="btnClicked"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Login"
+        android:onClick="btnLogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>
